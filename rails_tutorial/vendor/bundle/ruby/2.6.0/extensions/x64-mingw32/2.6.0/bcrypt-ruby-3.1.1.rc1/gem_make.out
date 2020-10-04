@@ -1,0 +1,21 @@
+current directory: C:/Users/yuya/rails_tutorial/vendor/bundle/ruby/2.6.0/gems/bcrypt-ruby-3.1.1.rc1/ext/mri
+C:/Ruby/bin/ruby.exe -I C:/Ruby/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200920-73356-z0ekk5.rb extconf.rb
+checking for ruby/util.h... yes
+creating Makefile
+
+current directory: C:/Users/yuya/rails_tutorial/vendor/bundle/ruby/2.6.0/gems/bcrypt-ruby-3.1.1.rc1/ext/mri
+make "DESTDIR=" clean
+
+current directory: C:/Users/yuya/rails_tutorial/vendor/bundle/ruby/2.6.0/gems/bcrypt-ruby-3.1.1.rc1/ext/mri
+make "DESTDIR="
+generating bcrypt_ext-x64-mingw32.def
+compiling bcrypt_ext.c
+compiling crypt.c
+compiling crypt_blowfish.c
+compiling crypt_gensalt.c
+compiling wrapper.c
+linking shared-object bcrypt_ext.so
+
+current directory: C:/Users/yuya/rails_tutorial/vendor/bundle/ruby/2.6.0/gems/bcrypt-ruby-3.1.1.rc1/ext/mri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20200920-73356-8v623u

@@ -1,0 +1,11 @@
+<h1>PVランキング</h1>
+<div class='row'>
+  <% num=1 %>
+  <% @ranking_microposts.each do |ranking_micropost| %>    <li>
+    <%= num %> 位 <%= link_to(ranking_micropost.title,"/microposts/#{ranking_micropost.id}") %> 
+      <a href="/microposts/<%= ranking_micropost.id %>">(<%= REDIS.zscore("microposts", ranking_micropost.id).to_i %>PV)</a>
+      | 作成者: <%= link_to ranking_micropost.user.name, ranking_micropost.user %>
+    </li>
+  <% num+=1 %>
+  <% end %>
+</div>

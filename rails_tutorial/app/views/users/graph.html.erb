@@ -1,0 +1,10 @@
+<h1>PVグラフ(ユーザー)</h1>
+<% @data = [] %>
+<% @ranking_users.each do |user| %>
+  <% @data.push([user.name , REDIS.zscore("users", user.id).to_i]) %>
+<% end %>
+<% if @data.length == 0 %> 
+  <h2>表示するグラフがありません</h2>
+<% else %>
+  <%= column_chart @data %>
+<% end %> 

@@ -1,0 +1,18 @@
+<h1>記事検索</h1>
+<%= search_form_for @q do |f| %>
+  <%= f.label :title_or_content, "Keyword" %>
+  <%= f.search_field :title_or_content_cont %>
+
+  <%= f.submit "検索" %>
+<% end %>
+
+<% if @posts.any? %>
+  <h2>検索結果は<%= @posts.count %>件でした</h2>
+  <% num=0 %>
+  <ul>
+    <% while num < @posts.count %>
+      <li><%= link_to @posts.to_a[num].title , @posts.to_a[num] %> | 作成者:<%= link_to @posts.to_a[num].user.name , @posts.to_a[num].user %></li>
+      <% num+=1 %>
+    <% end %>
+  </ul>
+<% end %>

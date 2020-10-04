@@ -1,0 +1,10 @@
+<% provide(:title, @micropost.title) %>
+<div class='row'>
+    <section class='user_info'>
+      <h1>
+        <%= @micropost.title %>
+      </h1>
+    </section>
+    <h2><%= @micropost.content %></h2>
+    <p>作成者:<%= link_to @micropost.user.name, @micropost.user  %></p>
+</div>

@@ -1,0 +1,16 @@
+current directory: C:/Users/yuya/rails_tutorial/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/ext/bootsnap
+C:/Ruby/bin/ruby.exe -I C:/Ruby/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200919-64244-kf43r5.rb extconf.rb
+creating Makefile
+
+current directory: C:/Users/yuya/rails_tutorial/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: C:/Users/yuya/rails_tutorial/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/ext/bootsnap
+make "DESTDIR="
+generating bootsnap-x64-mingw32.def
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: C:/Users/yuya/rails_tutorial/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.8/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20200919-64244-1tr1m6u/bootsnap
